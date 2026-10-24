@@ -1,0 +1,11 @@
+CARTPAY DIGITAL HUB — VERCEL GUIDE
+
+1) Extract ZIP.
+2) Upload all extracted files/folders to a GitHub repository root.
+3) Vercel > Add New > Project > import the GitHub repo.
+4) Framework preset: Other. Build command: empty. Output directory: . / root.
+5) Deploy.
+6) For saved enquiries, configure Supabase using README.md, add SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY to Vercel Environment Variables, then redeploy.
+
+IMPORTANT: Do not run `python serve.py` on Vercel. That script is for local testing only. Vercel uses the Python files in api/ as serverless functions.
+Do not put your Supabase service-role key in public files or GitHub.

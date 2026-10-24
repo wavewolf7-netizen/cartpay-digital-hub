@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/sb/rest/v1/products",
+      "destination": "/api/products"
+    }
+  ],
+  "functions": {
+    "api/products.py": {
+      "includeFiles": "products.json"
+    }
+  }
+}
